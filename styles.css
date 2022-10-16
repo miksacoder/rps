@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fantasy;
+  background: aliceblue;
+  user-select: none;
+}
+
+.start {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.start > h1 {
+  font-size: 500%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.start > img {
+  width: 30vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.start > button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 30vw;
+  font-size: 400%;
+  padding: 20px;
+  background: rgb(0, 191, 255);
+  border: 2px solid rgb(192, 192, 192);
+  transition: all 0.25s linear;
+}
+
+.start > button:hover {
+  border: 2px solid lightgray;
+  background: rgb(0, 181, 255);
+}
+
+.start > button:active {
+  background: rgb(0, 171, 255);
+}
+
+.gameScreen {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.player,
+.opponent {
+  margin: 2% 5%;
+  font-size: 400%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player > img,
+.opponent > img {
+  width: 30%;
+  border-radius: 160px;
+  margin: 10px 0px;
+}
+
+.player > img:hover,
+.opponent > img:hover {
+  box-shadow: 1px 1px lightgray;
+}
+
+.player {
+  float: left;
+}
+
+.opponent {
+  float: right;
+}
+
+.chosen {
+  display: none;
+}
+
+.gracz,
+.comp {
+  margin: 2% 5%;
+  font-size: 400%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gracz {
+  float: left;
+}
+
+.comp {
+  float: right;
+}
+
+.graczChoice {
+  width: 30vw;
+}
+
+.compChoice {
+  width: 30vw;
+}
+
+.win {
+  width: 30vw;
+  height: 30vw;
+  background-color: green;
+  position: fixed;
+  margin: 25vh 35vw;
+  color: white;
+  display: none;
+}
+
+.win > span {
+  background: green;
+  font-size: 500%;
+}
+
+.draw {
+  width: 30vw;
+  height: 30vw;
+  background-color: yellow;
+  position: fixed;
+  margin: 25vh 35vw;
+  color: black;
+  display: none;
+}
+
+.draw > span {
+  background: yellow;
+  font-size: 500%;
+}
+
+.lose {
+  width: 30vw;
+  height: 30vw;
+  background-color: red;
+  position: fixed;
+  margin: 25vh 35vw;
+  color: white;
+  display: none;
+}
+
+.lose > span {
+  background: red;
+  font-size: 500%;
+}
